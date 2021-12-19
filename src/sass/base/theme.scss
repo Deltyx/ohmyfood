@@ -1,0 +1,65 @@
+/* Resets */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*  Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
+/* Shapes */
+
+$small-component-radius: 100px;
+$medium-component-radius: 25px;
+$large-component-radius: 15px;
+
+/* Colors */
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+$color-black: #000000;
+$color-gray: #EAEAEA;
+$color-white: #FFFFFF;
+
+/* Responsive */
+
+$breakpoint-desktop: 1072px;
+$breakpoint-tablet: 768px;
+
+/* Layout */
+
+@mixin container($top, $bottom) {
+    padding: $top 5vw $bottom 5vw;
+    width: 90vw;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        padding: $top 7.5vw $bottom 7.5vw;
+        width: 85vw;
+    }
+}
+
+/* General class */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: $color-black;
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.fas {
+    font-size: 1.10rem;
+    color: var(--color-black);
+}

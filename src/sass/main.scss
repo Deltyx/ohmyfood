@@ -1,3 +1,17 @@
-body {
-    background-color: #000;
-}
+/* Base */
+
+@import "./base/theme";
+
+/* Encasing */
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+
+/* Components */
+
+@import "./components/buttons.scss";
+@import "./components/cards.scss";
+
+/* Pages */
+
+@import "./pages/homepage.scss";

@@ -1,0 +1,37 @@
+/* Footer */
+
+.footer {
+    &_section {
+        @include container(2rem, 2rem);
+        background: lighten($color-black,20%);
+    }
+
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_logo {
+        color: white;
+        font-family: 'Shrikhand';
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    &_column {
+        &_item {
+            margin-bottom: 0.25rem;
+        }
+
+        &_link {
+            list-style: none;
+            color: $color-white;
+        }
+        
+        .fa-utensils, .fa-hands-helping {
+            margin-right: 0.5rem;
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+    }
+}
