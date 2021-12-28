@@ -18,6 +18,15 @@
             margin-right: 1rem;
         }
     }
+    
+    &_input {
+        border: 0;
+        outline: 0;
+        font-size: 1rem;
+        background: transparent;
+        align-self: center;
+        max-width: 7.5rem;
+    }
 }
 
 /* Info */
