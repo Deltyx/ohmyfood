@@ -1,0 +1,41 @@
+/* Loader */
+
+.loader {
+    &_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    &_wrapper{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &_item {
+        background: linear-gradient($color-secondary, $color-primary);
+        animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+        height: 30%;
+        width: 30%;
+
+        &--1 {
+            animation-delay: -0.24s;
+            background: darkblue;
+        }
+        &--2 {
+            animation-delay: -0.12s;
+            background: darkcyan;
+        }
+        &--3 {
+            animation-delay: 0;
+            background: black;
+        }
+    }
+}
+

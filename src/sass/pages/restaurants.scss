@@ -19,6 +19,12 @@
     }
 }
 
+/* Header */
+
+.fa-arrow-left {
+    color: black;
+}
+
 /* Menu */
 
 /* General properties with multiple elements */
@@ -54,12 +60,8 @@
 
     &_card {
         display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
         overflow: hidden;
         margin-bottom: 1rem;
-        padding: 1rem;
         border-radius: $medium-component-radius;
         box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
         cursor: pointer;
@@ -68,6 +70,7 @@
             display: flex;
             flex-direction: column;
             flex: 1;
+            margin:1rem;
             width: 100%;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -78,6 +81,8 @@
             margin-bottom: 0.25rem;
             font-size: 1.25rem;
             font-weight: 500;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         &_header_subtitle {
@@ -93,20 +98,23 @@
             align-items: flex-end;
             justify-content: flex-end;
             margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            margin-bottom: 1rem;
             width: auto;
             height: auto;
             font-weight: 500;
+            position: relative;
+            right: -3.5rem;
         }
 
         &_wrapper-icon {
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
             width: 4rem;
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            right: -4rem;
+            right:-4rem;
+            height: auto;
             background: $color-tertiary;
         }
 
@@ -184,7 +192,7 @@
 
     /* Entries */
     
-    &_entries {
+    &_list {
         @include parts;
         
         &_card {
@@ -204,7 +212,7 @@
                 animation-delay: 0.9s;
             }
             &:hover {
-                .menu_entries_header_subtitle {
+                .menu_list_header_subtitle {
                      height: 100%;
                      font-weight: 300;
                      text-overflow: ellipsis;
@@ -212,48 +220,13 @@
                      overflow: hidden;
                 }
                 
-                .menu_entries_card_price {
-                    animation: slide 1s;
+                .menu_list_card_price {
+                    animation: slide 0.7s;
                     animation-fill-mode: forwards;
                 }
 
-                .menu_entries_card_wrapper-icon {
-                    animation: slide 1s;
-                    animation-fill-mode: forwards;
-                }
-
-                .fa-check-circle {
-                    animation: rotation 1s;
-                }
-            }
-        }
-    }
-
-    /* Dishes */
-    
-    &_dishes {
-        @include parts;
-        
-        &_card {
-            &--delay-1 {
-                animation-delay: 0s;
-            }
-
-            &--delay-2 {
-                animation-delay: 0.3s;
-            }
-
-            &--delay-3 {
-                animation-delay: 0.6s;
-            }
-            &:hover {
-                .menu_dishes_card_price {
-                    animation: slide 1s;
-                    animation-fill-mode: forwards;
-                }
-
-                .menu_dishes_card_wrapper-icon {
-                    animation: slide 1s;
+                .menu_list_card_wrapper-icon {
+                    animation: slide 0.7s;
                     animation-fill-mode: forwards;
                 }
 
@@ -263,42 +236,7 @@
             }
         }
     }
-
-    /* Desserts */
-    
-    &_desserts {
-        @include parts;
-        
-        &_card {
-            &--delay-1 {
-                animation-delay: 0s;
-            }
-
-            &--delay-2 {
-                animation-delay: 0.3s;
-            }
-
-            &--delay-3 {
-                animation-delay: 0.6s;
-            }
-            &:hover {
-                .menu_desserts_card_price {
-                    animation: slide 1s;
-                    animation-fill-mode: forwards;
-                }
-
-                .menu_desserts_card_wrapper-icon {
-                    animation: slide 1s;
-                    animation-fill-mode: forwards;
-                }
-
-                .fa-check-circle {
-                    animation: rotation 1s;
-                }
-            }
-        }
-    }
-    
+   
     &_btn {
         display: flex;
         justify-content: center;
