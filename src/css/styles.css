@@ -314,27 +314,25 @@ h1, h2 {
 }
 .loader_wrapper {
   display: flex;
-  height: 100%;
-  width: 100%;
+  align-items: center;
+  height: 50%;
+  width: 50%;
   justify-content: center;
 }
 .loader_item {
   background: linear-gradient(#FF79DA, #9356DC);
   animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-  height: 30%;
-  width: 30%;
+  height: 200px;
+  width: 200px;
 }
 .loader_item--1 {
   animation-delay: -0.24s;
-  background: darkblue;
 }
 .loader_item--2 {
   animation-delay: -0.12s;
-  background: darkcyan;
 }
 .loader_item--3 {
   animation-delay: 0;
-  background: black;
 }
 
 /* Pages */
