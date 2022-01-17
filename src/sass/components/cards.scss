@@ -86,9 +86,11 @@
         display: flex;
         flex-direction: column;
     }
+    &_link {
+        margin-bottom: 1.5rem;
+    }
 
     &_card {
-        margin-bottom: 1.5rem;
         position: relative;
         background: $color-white;
         border-radius: $large-component-radius;
