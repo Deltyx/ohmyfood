@@ -361,7 +361,7 @@ h1, h2 {
   animation-delay: -0.12s;
 }
 .loader_item--3 {
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 /* Pages */
